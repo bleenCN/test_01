@@ -307,7 +307,9 @@ function Card2(props: { info?: CardInfo2 }) {
         style={{ mask: "url(/img/card2.svg)" }}
       >
         <div>
-          <h4 className="title mb-5">{info?.title}</h4>
+          <h4 className="title mb-5">
+            <strong>{info?.title}</strong>
+          </h4>
 
           <div className="flex gap-2.5">
             {info?.tags.map((tag) => (
@@ -362,7 +364,9 @@ function Card3(props: { info?: CardInfo3 }) {
       >
         <div className="line h-1 bg-gradient-to-b from-[#3CBC34] to-[#D9E313] rounded-lg w-11 mb-3" />
 
-        <h4 className="title">{info?.title}</h4>
+        <h4 className="title">
+          <strong>{info?.title}</strong>
+        </h4>
 
         <div className="flex gap-2.5">
           {info?.tags.map((tag) => (
@@ -412,7 +416,9 @@ function Card4(props: { info?: CardInfo4 }) {
 
         <div className="line w-11 h-1 bg-gradient-to-b from-[#E0AD38] to-[#EB3E1C] rounded-[36px] mb-[145px]" />
 
-        <div className="title mb-[40px]">{info?.title}</div>
+        <h4 className="title mb-[40px]">
+          <strong>{info?.title}</strong>
+        </h4>
 
         <div className="ml-60">
           <Hour hour={info?.time} />
